@@ -2,7 +2,11 @@
 
 This repository contains a Keras implementation using the MNIST digits dataset.  
 It improves upon the results demonstrated in the [Keras blog](https://blog.keras.io/building-autoencoders-in-keras.html).  
-To achieve better performance, the model makes use of a deeper convolutional architecture as well as [batch normalization](http://proceedings.mlr.press/v37/ioffe15.pdf) layers.
+To achieve better performance, the model makes use of a deeper convolutional architecture as well as [batch normalization](http://proceedings.mlr.press/v37/ioffe15.pdf) layers and max-pooling rather than strided convolutions.
+
+![Embedded Latent Space](https://github.com/naivoder/DeepConvolutionalVariationalAutoencoder/images/mnist_latent_encoding.png?raw=True)
+
+![Generated Digits](https://github.com/naivoder/DeepConvolutionalVariationalAutoencoder/images/mnist_generated_digits.png?raw=True)
 
 ---
 
@@ -11,11 +15,11 @@ To achieve better performance, the model makes use of a deeper convolutional arc
 A requirements.txt file has been provided.  
 Once the repository has been cloned, create a new conda environment:
 
-'''bash
+```bash
 cd DeepConvolutionalVariationalAutoencoder
 conda create env --name DCVAE --file requirements.txt
 conda activate DCVAE
-'''
+```
 
 ---
 
@@ -23,15 +27,15 @@ conda activate DCVAE
 
 Run training from the command line:  
 
-'''bash
-cd code
+```bash
+cd code  
 python train.py
-'''
+```
 
 Run training with jupyter notebook:
 
-'''bash
+```bash
 cd notebook
 jupyter notebook
-'''
+```
 
