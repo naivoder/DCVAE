@@ -2,9 +2,14 @@
 
 This repository contains a Keras implementation using the MNIST digits dataset.  
 It improves upon the results demonstrated in the [Keras blog](https://blog.keras.io/building-autoencoders-in-keras.html).  
-To achieve better performance, the model makes use of a deeper convolutional architecture as well as [batch normalization](http://proceedings.mlr.press/v37/ioffe15.pdf) layers and max-pooling rather than strided convolutions.
+To achieve better performance, the model employs:
 
-![Embedded Latent Space](/images/mnist_latent_encoding.png "Latent Space Embedding") ![Generated Digits](/images/mnist_generated_digits.png "Generated Digits")
+- deeper convolutional architecture
+- [batch normalization](http://proceedings.mlr.press/v37/ioffe15.pdf) layers
+- [max pooling](https://keras.io/api/layers/pooling_layers/max_pooling2d/) rather than strided convolutions
+
+Latent Space Embedding:  
+![Embedded Latent Space](/images/mnist_latent_encoding.png "Latent Space Embedding") 
 
 ---
 
